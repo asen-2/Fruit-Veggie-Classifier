@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit & Veggie Recognition</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image"></script>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; }
+        video { width: 300px; border: 2px solid black; margin-top: 10px; }
+        button { padding: 10px; font-size: 16px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <h1>Fruit & Vegetable Recognition</h1>
+    
+    <video id="webcam" autoplay playsinline></video>
+    <p id="result">Prediction: </p>
+    <button onclick="predict()">Recognize</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
